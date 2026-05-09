@@ -1,8 +1,7 @@
 import { fireEvent, render, screen } from '@testing-library/react'
 import { vi, describe, expect, it } from 'vitest'
 import { NegativeFeedbackStep } from './NegativeFeedbackStep'
-
-const MAX_COMMENT_LENGTH = 500 // Adjust this to match the actual constant in your project.
+import { MAX_COMMENT_LENGTH } from '../feedbackPopup.constants'
 
 describe('NegativeFeedbackStep', () => {
   it('renders the form with all elements', () => {

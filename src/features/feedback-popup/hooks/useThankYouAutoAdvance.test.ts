@@ -8,7 +8,7 @@ describe('useThankYouAutoAdvance', () => {
   })
 
   afterEach(() => {
-    vi.runOnlyPendingTimers()
+    vi.clearAllTimers()
     vi.useRealTimers()
   })
 
